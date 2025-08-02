@@ -17,6 +17,7 @@ A simple and beautiful web application built using **Python Flask** and **SQLite
 
 ## 📸 Screenshots
 
+<img width="732" height="732" alt="Student Attendance Tracker" src="https://github.com/user-attachments/assets/7ee5e875-01b5-4907-a61f-7cd6a5aa2023" />
 
 
 ---
