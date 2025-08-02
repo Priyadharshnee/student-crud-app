@@ -1,0 +1,61 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Attendance Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📘 STUDENT ATTENDANCE TRACKER</h1>
+        <h3>📅 Date: {{ today }}</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>ATTENDANCE</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ student[1] }}</td>
+                    <td>{{ student[2] }}</td>
+                    <td>
+                        <form action="/mark_attendance" method="POST">
+                            <input type="hidden" name="student_id" value="{{ student[0] }}">
+                            <button type="submit" name="status" value="Present"
+                                class="present {% if attendance_today.get(student[0]) == 'Present' %}active{% endif %}">
+                                ✅ Present
+                            </button>
+                            <button type="submit" name="status" value="Absent"
+                                class="absent {% if attendance_today.get(student[0]) == 'Absent' %}active{% endif %}">
+                                ❌ Absent
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="form-section">
+            <h2>Add New Student</h2>
+            <form action="/add" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">➕ Add Student</button>
+            </form>
+        </div>
+
+        <div class="download">
+            <a href="/download" class="download-btn">📥 Download Today’s Attendance</a>
+        </div>
+    </div>
+</body>
+</html>

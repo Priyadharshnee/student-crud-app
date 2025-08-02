@@ -1,0 +1,83 @@
+/* static/styles.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5dc;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 4px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.present {
+  background: #4CAF50;
+  color: white;
+}
+
+.absent {
+  background: #f44336;
+  color: white;
+}
+
+.active {
+  box-shadow: 0 0 4px 2px #888;
+}
+
+.form-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.download {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.download-btn {
+  text-decoration: none;
+  background: #2196F3;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+}
