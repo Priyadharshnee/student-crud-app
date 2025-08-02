@@ -17,7 +17,7 @@ A simple and beautiful web application built using **Python Flask** and **SQLite
 
 ## 📸 Screenshots
 
->
+>2edd5fb2-f2c7-42b0-ad30-b0880e4b00dc.png
 
 ---
 
@@ -28,6 +28,7 @@ A simple and beautiful web application built using **Python Flask** and **SQLite
 - **Database**: SQLite
 
 ---
+Visit http://127.0.0.1:5000/ in your browser.
 
 ## 🚀 Getting Started
 
@@ -37,4 +38,4 @@ A simple and beautiful web application built using **Python Flask** and **SQLite
 git clone https://github.com/Priyadharshnee/student-crud-app.git
 cd student-crud-app
 
-Visit http://127.0.0.1:5000/ in your browser.
+
