@@ -17,7 +17,7 @@ A simple and beautiful web application built using **Python Flask** and **SQLite
 
 ## 📸 Screenshots
 
->2edd5fb2-f2c7-42b0-ad30-b0880e4b00dc.png
+
 
 ---
 
