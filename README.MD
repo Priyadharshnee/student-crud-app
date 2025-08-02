@@ -1,6 +1,3 @@
-
-<img width="732" alt="Student Attendance Tracker" src="https://github.com/user-attachments/assets/7ee5e875-01b5-4907-a61f-7cd6a5aa2023/2edd5fb2-f2c7-42b0-ad30-b0880e4b00dc.png" />
-
 # 🧑‍🎓 Student CRUD & Attendance Tracker App
 
 A simple and beautiful web application built using **Python Flask** and **SQLite**, allowing users to **Create, Read, Update, and Delete (CRUD)** student records with built-in **daily attendance tracking** and a feature to **download final reports**.
@@ -20,7 +17,7 @@ A simple and beautiful web application built using **Python Flask** and **SQLite
 
 ## 📸 Screenshots
 
-
+Visit http://127.0.0.1:5000/ in your browser.
 
 ---
 
@@ -31,7 +28,7 @@ A simple and beautiful web application built using **Python Flask** and **SQLite
 - **Database**: SQLite
 
 ---
-Visit http://127.0.0.1:5000/ in your browser.
+
 
 ## 🚀 Getting Started
 
